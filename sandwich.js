@@ -1,6 +1,6 @@
 
 //NSS provided code
-var SandwichMaker = (function() {
+var Sandwich = (function() {
 
   // Private variable to store the price
   var totalPrice = 0;
