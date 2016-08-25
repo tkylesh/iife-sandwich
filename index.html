@@ -2,8 +2,49 @@
 <html>
 <head>
 	<title>iife-sandwich</title>
+	<link rel="stylesheet" type="text/css" href="sandwich.css">
 </head>
 <body>
+	<!-- try to go back and dynamically generate these from javascript-->
+	<!-- meat -->
+	<label id="meatSelector">Meat:</label>
+	<select id="meatSelector">
+		<option value="turkey">Turkey</option>
+		<option value="ham">Ham</option>
+		<option value="chicken">Chicken</option>
+	</select>
+	<!-- bread -->
+	<label id="breadSelector">Bread:</label>
+	<select id="breadSelector">
+		<option value="Wheat">Wheat</option>
+		<option value="White">White</option>
+		<option value="Wheatberry">Wheatberry</option>
+	</select>
+	<!-- cheese -->
+	<label id="cheeseSelector">Cheese:</label>
+	<select id="cheeseSelector">
+		<option value="Cheedar">Cheddar</option>
+		<option value="Pepperjack">Pepper-jack</option>
+		<option value="Swiss">Swiss</option>
+	</select>
+	<!-- veggies -->
+	<label id="veggieSelector">Veggies:</label>
+	<select id="veggieSelector">
+		<option value="lettuce">Lettuce</option>
+		<option value="tomato">Tomato</option>
+		<option value="pickle">Pickle</option>
+		<option value="peppers">Peppers</option>
+	</select>
+	<!-- condiments -->
+	<label id="condimentSelector">Condiments:</label>
+	<select id="condimentSelector">
+		<option value="mayonaise">Mayonaise</option>
+		<option value="mustard">Mustard</option>
+		<option value="spicymustard">Spicy Mustard</option>
+	</select>
+
+
+	<div id="totalCost"></div>
 
 <script type="text/javascript" src="sandwich.js"></script>
 <script type="text/javascript" src="meat.js"></script>
