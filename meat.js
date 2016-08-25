@@ -17,6 +17,10 @@ var Sandwich = (function(meatHandler) {
   meatHandler.getMeat = function(){
 			return meat;
 	};
+  meatHandler.getMeatPrice = function(meatname){
+      return meat[meatname];
+  };
+
 
   // Return the new, augmented object with the new method on it
   return meatHandler;
