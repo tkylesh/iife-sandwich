@@ -16,14 +16,14 @@
 	<!-- bread -->
 	<label for="breadSelector">Bread:</label>
 	<select id="breadSelector">
-		<option value="Wheat">Wheat</option>
-		<option value="White">White</option>
-		<option value="Wheatberry">Wheatberry</option>
+		<option value="wheat">Wheat</option>
+		<option value="white">White</option>
+		<option value="wheatberry">Wheatberry</option>
 	</select>
 	<!-- cheese -->
 	<label for="cheeseSelector">Cheese:</label>
 	<select id="cheeseSelector">
-		<option value="cheedar">Cheddar</option>
+		<option value="cheddar">Cheddar</option>
 		<option value="pepperjack">Pepper-jack</option>
 		<option value="swiss">Swiss</option>
 	</select>
@@ -42,10 +42,43 @@
 		<option value="mustard">Mustard</option>
 		<option value="spicymustard">Spicy Mustard</option>
 	</select>
-	<!-- Here's a div to output all sandwich toppings -->
-	<div id="sandwichList"></div>
-	<!-- Here's a div to output total cost of sandwich -->
-	<div id="totalCost"></div>
+	<!-- meat Selector -->
+	<div id="meatContainer">
+		<!-- Here's a div to output all sandwich toppings -->
+		<ul id="meatList"></ul>
+		<!-- Here's a div to output total cost of sandwich -->
+		<ul id="meatCost"></ul>
+	</div>
+	<!-- bread Selector -->
+	<div id="breadContainer">
+		<!-- Here's a div to output all sandwich toppings -->
+		<ul id="breadList"></ul>
+		<!-- Here's a div to output total cost of sandwich -->
+		<ul id="breadCost"></ul>
+	</div>
+	<!-- cheese selection -->
+	<div id="cheeseContainer">
+		<!-- Here's a div to output all sandwich toppings -->
+		<ul id="cheeseList"></ul>
+		<!-- Here's a div to output total cost of sandwich -->
+		<ul id="cheeseCost"></ul>
+	</div>
+	<!-- veggie selection -->
+	<div id="veggieContainer">
+		<!-- Here's a div to output all sandwich toppings -->
+		<ul id="veggieList"></ul>
+		<!-- Here's a div to output total cost of sandwich -->
+		<ul id="veggieCost"></ul>
+	</div>
+	<!-- condiment selection -->
+	<div id="condimentContainer">
+		<!-- Here's a div to output all sandwich toppings -->
+		<ul id="condimentList"></ul>
+		<!-- Here's a div to output total cost of sandwich -->
+		<ul id="condimentCost"></ul>
+	</div>
+
+	<button type="button">Get Total</button>
 
 <script type="text/javascript" src="sandwich.js"></script>
 <script type="text/javascript" src="meat.js"></script>

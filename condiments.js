@@ -15,6 +15,9 @@ var Sandwich = (function(condimentsHandler) {
   condimentsHandler.getCondiments = function(){
 			return condiments;
 	};
+      condimentsHandler.getCondimentPrice = function(condimentname){
+      return condiments[condimentname];
+  };
 
   // Return the new, augmented object with the new method on it
   return condimentsHandler;

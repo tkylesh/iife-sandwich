@@ -1,7 +1,7 @@
 
 // This Sandwich IIFE augments the original one
 var Sandwich = (function(VeggiesHandler) {
-	var veggies = {"lettuce":0.25, "tomato": 0.25,"pickles":0.25,"peppers": 0.30};
+	var veggies = {"lettuce":0.25, "tomato": 0.25,"pickle":0.25,"peppers": 0.30};
 
   // Private variable to store the different veggies prices
   var veggiesPrices;
@@ -15,6 +15,9 @@ var Sandwich = (function(VeggiesHandler) {
   VeggiesHandler.getVeggies = function(){
 			return veggies;
 	};
+    VeggiesHandler.getVeggiePrice = function(vegname){
+      return veggies[vegname];
+  };
 
   // Return the new, augmented object with the new method on it
   return VeggiesHandler;

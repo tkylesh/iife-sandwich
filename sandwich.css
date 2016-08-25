@@ -8,3 +8,78 @@ select{
 	width: 15%;
 	margin-right: 10px;
 }
+
+#meatContainer{
+	display: inline-block;
+	text-align: left;
+	width: 15%;
+}
+#meatList{
+
+	float: left;
+}
+
+#meatCost{
+
+	float: right;
+}
+#breadContainer{
+	margin-left: 5%;
+	display: inline-block;
+	text-align: left;
+	width: 15%;
+}
+#breadList{
+	float: left;
+}
+
+#breadCost{
+	float: right;
+}
+#cheeseContainer{
+	margin-left: 5%;
+	display: inline-block;
+	text-align: left;
+	width: 15%;
+}
+#cheeseList{
+	float: left;
+}
+
+#cheeseCost{
+	float: right;
+}
+#veggieContainer{
+	margin-left: 5%;
+	display: inline-block;
+	text-align: left;
+	width: 15%;
+}
+#veggieList{
+	float: left;
+}
+
+#veggieCost{
+	float: right;
+}
+#condimentContainer{
+	margin-left: 5%;
+	display: inline-block;
+	text-align: left;
+	width: 15%;
+}
+#condimentList{
+	float: left;
+}
+
+#condimentCost{
+	float: right;
+}
+
+button{
+	display: block;
+	text-align: center;
+	margin: 5% auto 0 auto;
+	height: 100px;
+	width: 200px;
+}
