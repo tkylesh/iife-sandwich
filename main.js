@@ -92,6 +92,7 @@ var cheeseSelector = document.getElementById('cheeseSelector');
    document.getElementById('condimentList').innerHTML += "<li>"+toAdd+"</li>";
 });
 
+ //******************Remove Element Functions***********************/
  /******************************************************************/
 function removeMeat() {
     var list = document.getElementById("meatList");
