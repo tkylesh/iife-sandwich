@@ -4,12 +4,14 @@ body{
 	display: inline-block;
 }
 select{
+	margin-bottom: 0 !important;
 	margin-top: 5%;
 	width: 15%;
 	margin-right: 10px;
 }
 
 #meatContainer{
+	margin-top: 0;
 	margin-left: 2.5%;
 	display: inline-block;
 	text-align: left;
@@ -26,7 +28,9 @@ select{
 	float: right;
 }
 #breadContainer{
-	margin-left: 2.5%;
+	margin-top: 0;
+	border: 1px solid wheat;
+	margin-left: 3.5%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;
@@ -39,7 +43,9 @@ select{
 	float: right;
 }
 #cheeseContainer{
-	margin-left: 2.5%;
+	margin-top: 0;
+	border: 1px solid yellow;
+	margin-left: 3.8%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;
@@ -52,7 +58,9 @@ select{
 	float: right;
 }
 #veggieContainer{
-	margin-left: 2.5%;
+	border: 1px solid tomato;
+	margin-top: 0;
+	margin-left: 4.25%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;
@@ -65,7 +73,9 @@ select{
 	float: right;
 }
 #condimentContainer{
-	margin-left: 2.5%;
+	border: 1px solid lime;
+	margin-top: 0;
+	margin-left: 5.8%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;

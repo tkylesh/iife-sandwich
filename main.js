@@ -93,14 +93,34 @@ var cheeseSelector = document.getElementById('cheeseSelector');
 });
 
  /******************************************************************/
-//remove first item and item price from meat list
-//**Alter function to work with all lists by using getElementsByTag**
-//**and a for loop to loop through each ul tag and remove the first
-//item from each list when button clicked
-function removeItem() {
+function removeMeat() {
     var list = document.getElementById("meatList");
     var cost = document.getElementById("meatCost");
     list.removeChild(list.childNodes[0]);
     cost.removeChild(cost.childNodes[0]);
 }
 /******************************************************************/
+function removeBread() {
+    var list = document.getElementById("breadList");
+    var cost = document.getElementById("breadCost");
+    list.removeChild(list.childNodes[0]);
+    cost.removeChild(cost.childNodes[0]);
+}
+function removeCheese() {
+    var list = document.getElementById("cheeseList");
+    var cost = document.getElementById("cheeseCost");
+    list.removeChild(list.childNodes[0]);
+    cost.removeChild(cost.childNodes[0]);
+}
+function removeVeggie() {
+    var list = document.getElementById("veggieList");
+    var cost = document.getElementById("veggieCost");
+    list.removeChild(list.childNodes[0]);
+    cost.removeChild(cost.childNodes[0]);
+}
+function removeCondiment() {
+    var list = document.getElementById("condimentList");
+    var cost = document.getElementById("condimentCost");
+    list.removeChild(list.childNodes[0]);
+    cost.removeChild(cost.childNodes[0]);
+}
