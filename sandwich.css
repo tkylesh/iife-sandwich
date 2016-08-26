@@ -10,9 +10,11 @@ select{
 }
 
 #meatContainer{
+	margin-left: 2.5%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;
+	border: 1px solid brown;
 }
 #meatList{
 
@@ -24,7 +26,7 @@ select{
 	float: right;
 }
 #breadContainer{
-	margin-left: 5%;
+	margin-left: 2.5%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;
@@ -37,7 +39,7 @@ select{
 	float: right;
 }
 #cheeseContainer{
-	margin-left: 5%;
+	margin-left: 2.5%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;
@@ -50,7 +52,7 @@ select{
 	float: right;
 }
 #veggieContainer{
-	margin-left: 5%;
+	margin-left: 2.5%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;
@@ -63,7 +65,7 @@ select{
 	float: right;
 }
 #condimentContainer{
-	margin-left: 5%;
+	margin-left: 2.5%;
 	display: inline-block;
 	text-align: left;
 	width: 15%;
@@ -76,10 +78,22 @@ select{
 	float: right;
 }
 
-button{
+button#total{
 	display: block;
 	text-align: center;
 	margin: 5% auto 0 auto;
 	height: 100px;
 	width: 200px;
 }
+div#btnContainer{
+	text-align: center;
+
+}
+button.meatBtn{
+	border: 1px solid brown;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 0;
+}
+

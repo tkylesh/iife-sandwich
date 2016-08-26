@@ -18,6 +18,8 @@ var finalSandwichPrice = 0;
 var selectedTopping;
 
 
+
+
 /* 
   A <select> element broadcasts a change event, so you listen for it
   and get the value of the topping from your augmented IIFE
@@ -30,10 +32,10 @@ var meatSelector = document.getElementById("meatSelector");
   selectedTopping = event.target.value;
   // Determine the price of the topping chosen
   var price = Sandwich.getMeatPrice(selectedTopping);
-  document.getElementById('meatCost').innerHTML += "<li>$"+price+"</li>";
+  document.getElementById('meatCost').innerHTML += "<li class='price'>$"+price+"</li>";
  // Add the topping to the SandwichMaker to increase the total price
    var toAdd =selectedTopping;
-   document.getElementById('meatList').innerHTML += "<li>"+toAdd+"</li>";  
+   document.getElementById('meatList').innerHTML += "<li class='ingredient'>"+toAdd+"</li>";  
 });
 
 
@@ -89,3 +91,16 @@ var cheeseSelector = document.getElementById('cheeseSelector');
    var toAdd =selectedTopping;
    document.getElementById('condimentList').innerHTML += "<li>"+toAdd+"</li>";
 });
+
+ /******************************************************************/
+//remove first item and item price from meat list
+//**Alter function to work with all lists by using getElementsByTag**
+//**and a for loop to loop through each ul tag and remove the first
+//item from each list when button clicked
+function removeItem() {
+    var list = document.getElementById("meatList");
+    var cost = document.getElementById("meatCost");
+    list.removeChild(list.childNodes[0]);
+    cost.removeChild(cost.childNodes[0]);
+}
+/******************************************************************/
