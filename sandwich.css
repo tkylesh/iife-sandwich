@@ -91,7 +91,7 @@ select{
 button#total{
 	display: block;
 	text-align: center;
-	margin: 5% auto 0 auto;
+	margin: 3% auto 0 auto;
 	height: 100px;
 	width: 200px;
 }
@@ -105,5 +105,11 @@ button.meatBtn{
 	margin-right: auto;
 	margin-top: 1%;
 	margin-bottom: 0;
+}
+
+
+div#sandwichCost{
+	text-align: center;
+	margin-top: 5%;
 }
 
