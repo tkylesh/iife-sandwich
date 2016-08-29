@@ -1,39 +1,39 @@
 body{
 	width: 100%;
-	padding:0 15px;
+	padding:0;
 	display: inline-block;
 }
 select{
 	margin-bottom: 0 !important;
 	margin-top: 5%;
-	width: 15%;
+	width: 13%;
 	margin-right: 10px;
 }
 
 #meatContainer{
 	margin-top: 0;
-	margin-left: 2.5%;
+	margin-left: 3%;
 	display: inline-block;
 	text-align: left;
-	width: 15%;
+	width: 13%;
 	border: 1px solid brown;
 }
 #meatList{
-
+	font-size: 15px;
 	float: left;
 }
 
 #meatCost{
-
+	font-size: 15px;
 	float: right;
 }
 #breadContainer{
 	margin-top: 0;
 	border: 1px solid wheat;
-	margin-left: 3.5%;
+	margin-left: 4.5%;
 	display: inline-block;
 	text-align: left;
-	width: 15%;
+	width: 13%;
 }
 #breadList{
 	float: left;
@@ -45,46 +45,52 @@ select{
 #cheeseContainer{
 	margin-top: 0;
 	border: 1px solid yellow;
-	margin-left: 3.8%;
+	margin-left: 5%;
 	display: inline-block;
 	text-align: left;
-	width: 15%;
+	width: 13%;
 }
 #cheeseList{
+	font-size: 15px;
 	float: left;
 }
 
 #cheeseCost{
+	font-size: 15px;
 	float: right;
 }
 #veggieContainer{
 	border: 1px solid tomato;
 	margin-top: 0;
-	margin-left: 4.25%;
+	margin-left: 5%;
 	display: inline-block;
 	text-align: left;
-	width: 15%;
+	width: 13%;
 }
 #veggieList{
+	font-size: 15px;
 	float: left;
 }
 
 #veggieCost{
+	font-size: 15px;
 	float: right;
 }
 #condimentContainer{
 	border: 1px solid lime;
 	margin-top: 0;
-	margin-left: 5.8%;
+	margin-left: 7%;
 	display: inline-block;
 	text-align: left;
-	width: 15%;
+	width: 13%;
 }
 #condimentList{
+	font-size: 15px;
 	float: left;
 }
 
 #condimentCost{
+	font-size: 15px;
 	float: right;
 }
 
@@ -106,7 +112,6 @@ button.meatBtn{
 	margin-top: 1%;
 	margin-bottom: 0;
 }
-
 
 div#sandwichCost{
 	text-align: center;

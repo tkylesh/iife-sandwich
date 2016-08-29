@@ -32,7 +32,9 @@ var meatSelector = document.getElementById("meatSelector");
   selectedTopping = event.target.value;
   // Determine the price of the topping chosen
   var price = Sandwich.getMeatPrice(selectedTopping);
-  document.getElementById('meatCost').innerHTML += "<li class='price'>$"+price+"</li>";
+  document.getElementById('meatCost').innerHTML += "<li class='price'>"+price+"</li>";
+  //***********Add sandwich price to finalSanwichPrice*************//
+  finalSandwichPrice +=price;
  // Add the topping to the SandwichMaker to increase the total price
    var toAdd =selectedTopping;
    document.getElementById('meatList').innerHTML += "<li class='ingredient'>"+toAdd+"</li>";  
@@ -47,6 +49,8 @@ var breadSelector = document.getElementById('breadSelector');
   // Determine the price of the topping chosen
   var breadprice = Sandwich.getBreadPrice(selectedTopping);
   document.getElementById('breadCost').innerHTML += "<li>$"+breadprice+"</li>";
+  //***********Add sandwich price to finalSanwichPrice*************//
+  finalSandwichPrice +=price;
    // Add the topping to the SandwichMaker to increase the total price
    var toAdd =selectedTopping;
    document.getElementById('breadList').innerHTML += "<li>"+toAdd+"</li>";
@@ -61,6 +65,8 @@ var cheeseSelector = document.getElementById('cheeseSelector');
   // Determine the price of the topping chosen
   var price = Sandwich.getCheesePrice(selectedTopping);
   document.getElementById('cheeseCost').innerHTML += "<li>$"+price+"</li>";
+  //***********Add sandwich price to finalSanwichPrice*************//
+  finalSandwichPrice +=price;
  // Add the topping to the SandwichMaker to increase the total price
    var toAdd =selectedTopping;
    document.getElementById('cheeseList').innerHTML += "<li>"+toAdd+"</li>"; 
@@ -74,6 +80,8 @@ var cheeseSelector = document.getElementById('cheeseSelector');
   // Determine the price of the topping chosen
   var price = Sandwich.getVeggiePrice(selectedTopping);
   document.getElementById('veggieCost').innerHTML += "<li>$"+price+"</li>";
+  //***********Add sandwich price to finalSanwichPrice*************//
+  finalSandwichPrice +=price;
    // Add the topping to the SandwichMaker to increase the total price
    var toAdd =selectedTopping;
    document.getElementById('veggieList').innerHTML += "<li>"+toAdd+"</li>";
@@ -87,16 +95,20 @@ var cheeseSelector = document.getElementById('cheeseSelector');
   // Determine the price of the topping chosen
   var price = Sandwich.getCondimentPrice(selectedTopping);
   document.getElementById('condimentCost').innerHTML += "<li>$"+price+"</li>";
+  //***********Add sandwich price to finalSanwichPrice*************//
+  finalSandwichPrice +=price;
    // Add the topping to the SandwichMaker to increase the total price
    var toAdd =selectedTopping;
    document.getElementById('condimentList').innerHTML += "<li>"+toAdd+"</li>";
 });
 
+document.getElementById('').innerHtml = ;
  //******************Remove Element Functions***********************/
  /******************************************************************/
 function removeMeat() {
     var list = document.getElementById("meatList");
     var cost = document.getElementById("meatCost");
+    //*********Add code to remove cost value from price total*****/////
     list.removeChild(list.childNodes[0]);
     cost.removeChild(cost.childNodes[0]);
 }
